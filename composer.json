@@ -1,0 +1,7 @@
+{
+    "name": "quint/ftp",
+    "description": "Getting a FTP file and parsing",
+    "require": {
+        "nicolab/php-ftp-client": "^1"
+    }
+}
