@@ -7,11 +7,6 @@ require_once dirname(__DIR__) . '/vendor/autoload.php';
  * FTP helper, checks if a remote file is accessible
  * @param string $fileName
  * @param array $items
- * @return bool
- */
-/**
- * @param string $fileName
- * @param array $items
  * @return string|null
  */
 function remoteFileReadable(string $fileName, array $items)
@@ -46,7 +41,7 @@ function fileInfo(string $file, $chunkSize): array
         // respect memory via chunkSize
         $string = fgets($in, $chunkSize);
         $chunkCount++;
-
+        // file pointers
         $chunks[$chunkCount] = ['length' => strlen($string)];
     }
     fclose($in);
@@ -55,7 +50,7 @@ function fileInfo(string $file, $chunkSize): array
 }
 
 /**
- * Read/Output file by chunk length
+ * Read/Output file content by chunk length.
  * @param $fileInfo
  */
 function readLocalFile($fileInfo): void
@@ -110,10 +105,4 @@ try {
 } catch (Exception $exception) {
     echo $exception->getMessage();
 }
-
-
-
-
-
-
 
