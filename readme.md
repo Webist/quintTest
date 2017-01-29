@@ -1,5 +1,8 @@
 FTP file download and reader.
 
+### Install 
+run composer
+
 ### How to use it
 
 1. Edit file names  
@@ -16,3 +19,4 @@ FTP file download and reader.
     
 ### Requirements
 PHP >= 7.1
+composer
