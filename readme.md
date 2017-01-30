@@ -5,11 +5,11 @@ run composer
 
 ### How to use it
 
-1. Edit file names  
+1. Edit file names in file src/exercise.php 
  `$localFile = 'exercise.txt';`  
  `$remoteFile = 'exercise.txt';`
  
-2. Edit connection parameters  
+2. Edit connection parameters in file src/exercise.php 
  `$ftp->connect('test.nl');`  
  `$ftp->login('user', 'passwd');`
 
